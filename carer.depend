@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1523318309 source:h:\progra\c\carer\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"head.h"
+
+1523321291 source:h:\progra\c\carer\fcode.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<strings.h>
+	<time.h>
+	<locale.h>
+	"head.h"
+	<Tchar.h>
+
+1523313431 h:\progra\c\carer\head.h
+
+1523218995 source:h:\progra\c\carer\ressources.rc
+

@@ -1,0 +1,192 @@
+
+****************************************************************************************************************************
+
+					PROGRAMMATION C
+
+					Réalisé Par: LOTCHOUANG CECILE & SONG CEDRIC 
+
+****************************************************************************************************************************
+
+
+
+
+	----------------------------------PRESENTATION DU PROGRAMME-------------------------------------
+
+
+le Programme se nomme "SLEEPWELL" il a été conseillé pour les organismes (donc se deploie coté entreprise uniqument).
+
+Il permet de faire la reservation de chambres d'hotel par des particuliers via une société prestataire du service.
+
+le programme permet l'ajout, La modification, la suppression et l'affichage de la liste ou d une reservation cliente particuliere. 
+
+la sauvegarde des donnés se fait dans des fichiers.
+
+
+
+
+
+
+
+	------------------------------------------UTILISATION----------------------------------------
+
+
+
+Lors de l'ouverture du programme on charge les dimensions l'ecran et la memoire tempons
+
+Ensuite une fonction demande a l'utilisateur d' entrer un mot de passe et nom d'utilisateur
+
+si le nom mot de passe est incorrecte un message d'erreur est saffiché suivi d'un signal sonore
+
+si le mot de passe est correcte le menu s'affiche et l'utilisateur peut faire un choix conformement a ce qui est proposé a l'ecran
+
+il a donc le choix entrer les differentes acions (ajouter, supprimé, affiché, et modifier)
+
+le dernier choix propose de quitter si l'utilisateur la selectionne une confimation est demandé et le programme se ferme si validé et retourne au menu quand mm
+
+
+
+
+
+			/***Compilation Du Programme Sous WINDOWS***/
+
+ 
+	- Lancer le CMD
+
+	- se positionner dans le repertoire contenant le projet a l'aide de la commande " cd "
+
+	- taper la commande "gcc -o carer carer.c"
+
+	- taper la comande carer.exe qui sera genéré a l'issue de la commande precedente
+
+
+
+
+
+
+
+
+
+
+		   /***Signature et Roles Differentes Fonctions Du Projet***/
+
+
+     --->void Login();
+	
+	demande un mot de passe et un nom d'utilisateur
+
+
+
+	
+    --->void trait(int x);
+
+
+	imprime a l'ecran des trait pour separer les differentes infomations contenu dans le liste des reservations
+
+
+
+
+    --->void gotoxy(int x,int y);
+
+
+	positionne le curseur dans la console
+
+
+
+
+    --->void color(int t,int f);
+
+	modifie la couleur de police et d'arriere plans des caracteres
+
+
+
+
+    --->void Add_client();
+	
+	Premet d'ajouter une reservation cliente dans le fichier
+
+
+
+    --->void Affiche_List();
+
+	Affiche la liste des reservations sous forme de tableau
+
+
+
+    --->void Affiche_Rserv(long long int Mat);
+
+	Affiche une reservation particuliere
+
+
+
+    --->int Supprime_Client(long long int numcni);
+
+	Supprime une reservations particuliere
+
+
+
+    --->void Supprime_List();
+
+	supprime la liste des reservation
+
+
+
+    --->void Modif_Reserv(long long int numcni);
+
+	Modifier une reservation particuliere
+
+
+
+    --->void Wait(float temps);
+
+	Permet d'attendre un nombre de seconde avant d'exeuter l'instruction suivante.
+
+
+
+    --->void CreateCarre(int i, int j, int x, int y);
+
+	Premet de dessiner des carré ou des rectangle a l'ecran.
+
+
+    --->void LoadScreen();
+
+	Charge l'ecran par defaut et la memoire tampon.
+
+
+    --->int CountList();
+
+	Compte le nombre de d'enregistrement dans le fichier.
+
+
+
+
+
+                                   /***Apports Du Projet.***/
+
+
+	-Définir une structure de donnée correct et approprié pour facilement manipuler les différentes fonctions
+
+	-écrire et lire dans un fichier
+
+	-creer les fonctions 
+
+	-Gestion de plusieurs fichier
+
+
+
+
+                                 /***Difficulté Rencontré***/
+
+	-Gestion de la taille de la console et de sa memoire tampon (buffer)
+			
+		resolution: recherche sur les forums web 
+
+			    solution au probleme trouvé apres deux jours de recherche
+
+
+	-difficulté de concordance des emplois du temps des menbres pour des seance de mise a jour et debuggage.
+
+	-probleme lier au materiel
+
+	-probleme lors de la compilation en ligne de commande (du a la presence de plusieur fichier) message d'erreur:undrfined reference to "nom_fonction"
+	
+			probleme non résolu.
